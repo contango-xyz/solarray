@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.6.2 <0.9.0;
 
 library Solarray {
     
@@ -211,7 +210,8 @@ library Solarray {
 		arr[6] = g;
         return arr;
     }
-    
+
+
     function uint40s(uint40 a) internal pure returns (uint40[] memory) {
         uint40[] memory arr = new uint40[](1);
 		arr[0] = a;
@@ -280,6 +280,7 @@ library Solarray {
 		arr[6] = g;
         return arr;
     }
+
 
     function uint64s(uint64 a) internal pure returns (uint64[] memory) {
         uint64[] memory arr = new uint64[](1);
@@ -970,6 +971,76 @@ library Solarray {
 
     function bytes1s(bytes1 a,bytes1 b,bytes1 c,bytes1 d,bytes1 e,bytes1 f,bytes1 g) internal pure returns (bytes1[] memory) {
         bytes1[] memory arr = new bytes1[](7);
+		arr[0] = a;
+		arr[1] = b;
+		arr[2] = c;
+		arr[3] = d;
+		arr[4] = e;
+		arr[5] = f;
+		arr[6] = g;
+        return arr;
+    }
+
+
+    function bytes4s(bytes4 a) internal pure returns (bytes4[] memory) {
+        bytes4[] memory arr = new bytes4[](1);
+		arr[0] = a;
+        return arr;
+    }
+
+
+    function bytes4s(bytes4 a,bytes4 b) internal pure returns (bytes4[] memory) {
+        bytes4[] memory arr = new bytes4[](2);
+		arr[0] = a;
+		arr[1] = b;
+        return arr;
+    }
+
+
+    function bytes4s(bytes4 a,bytes4 b,bytes4 c) internal pure returns (bytes4[] memory) {
+        bytes4[] memory arr = new bytes4[](3);
+		arr[0] = a;
+		arr[1] = b;
+		arr[2] = c;
+        return arr;
+    }
+
+
+    function bytes4s(bytes4 a,bytes4 b,bytes4 c,bytes4 d) internal pure returns (bytes4[] memory) {
+        bytes4[] memory arr = new bytes4[](4);
+		arr[0] = a;
+		arr[1] = b;
+		arr[2] = c;
+		arr[3] = d;
+        return arr;
+    }
+
+
+    function bytes4s(bytes4 a,bytes4 b,bytes4 c,bytes4 d,bytes4 e) internal pure returns (bytes4[] memory) {
+        bytes4[] memory arr = new bytes4[](5);
+		arr[0] = a;
+		arr[1] = b;
+		arr[2] = c;
+		arr[3] = d;
+		arr[4] = e;
+        return arr;
+    }
+
+
+    function bytes4s(bytes4 a,bytes4 b,bytes4 c,bytes4 d,bytes4 e,bytes4 f) internal pure returns (bytes4[] memory) {
+        bytes4[] memory arr = new bytes4[](6);
+		arr[0] = a;
+		arr[1] = b;
+		arr[2] = c;
+		arr[3] = d;
+		arr[4] = e;
+		arr[5] = f;
+        return arr;
+    }
+
+
+    function bytes4s(bytes4 a,bytes4 b,bytes4 c,bytes4 d,bytes4 e,bytes4 f,bytes4 g) internal pure returns (bytes4[] memory) {
+        bytes4[] memory arr = new bytes4[](7);
 		arr[0] = a;
 		arr[1] = b;
 		arr[2] = c;
